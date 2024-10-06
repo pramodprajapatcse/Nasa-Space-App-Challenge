@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# NASA Space App Challenge 2024 - AgriTool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## PRASUNETECH
 
-## Available Scripts
+### Project Overview
+Agricultural decision-making depends on timely and accurate data. To help farmers and researchers make informed choices, we developed "AgriTool," a platform designed to improve access to high-quality datasets from NASA and other sources. AgriTool enables users to search for relevant datasets, extract key information, and visualize data to guide decisions such as selecting the best crops for specific soil types. For example, if a farmer wants to find the most profitable crop for their land, AgriTool scrapes publicly available datasets, extracts the necessary features, and compares yield potential. Our goal is to provide reliable data insights that support smallholder farmers and strengthen food security.
 
-In the project directory, you can run:
+### Demo Video
+[Watch the Demo](https://drive.google.com/file/d/1JLJ_jA0K0NkfNaDi46YQmIkculmi35dJ/view)
 
-### `npm start`
+### Coding Languages:
+- HTML
+- CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tools Used:
+- MongoDB
+- Express.js
+- React
+- VS Code
+- NASA APIs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Artificial Intelligence:
+While our current prototype does not include AI features, we plan to implement AI in future iterations. Specifically, we intend to use natural language processing (NLP) and semantic analysis to simplify dataset searches and improve data filtering. Future development will involve prototyping and gathering user feedback to determine the best AI tools to integrate.
 
-### `npm test`
+### Interactive Prototype on Figma:
+[View our prototype on Figma](https://www.figma.com/proto/EsUiVCJV6TjqIXPLZkr6KQ/PRASUNETECH-INDIA-NASA-Space-Apps-2024-Prototype?node-id=303-5687&&t=Gil3KiLae0ExKnAu-1)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Data Sources:
+- [NASA EarthData](https://search.earthdata.nasa.gov/search/granules?p=C2216864433-ORNL_CLOUD&pg[0][v]=f&pg[0][gsk]=-start_date&q=csv&gdf=CSV&tl=1696808786.967!3!!&fst0=Agriculture)
+- [USDA AG Data Commons - SSURGO Data Dictionary](https://data.nal.usda.gov/system/files/SSURGO%202.3.2%20Data%20Dictionary_0.csv)
+- [USDA AG Data Commons - CPI Forecast](https://www.ers.usda.gov/webdocs/DataFiles/50673/CPIForecast.xlsx?v=7836.9)
+- [USDA ERS - Fruit Prices 2020](https://www.ers.usda.gov/webdocs/DataFiles/51035/Fruit%20Prices%202020.csv?v=3053.8)
