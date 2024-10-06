@@ -1,0 +1,84 @@
+/* SoilMoisture.css */
+
+/* Apply a gradient background to the entire component */
+.soil-moisture-container {
+    background: linear-gradient(135deg, #ffffff, #d4edda); /* White to light green gradient */
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style for the main title */
+  .soil-moisture-container h1 {
+    font-size: 2.5em;
+    color: #2d572c; /* Dark green color */
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for each chart section */
+  .chart-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for chart sections */
+  .chart-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Style for chart titles */
+  .chart-section h2 {
+    font-size: 1.8em;
+    color: #2d572c; /* Dark green */
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #2d572c;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Responsive canvas */
+  .chart-section canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Loading and error messages */
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 1.5em;
+    color: #2d572c;
+    margin-top: 100px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .soil-moisture-container {
+      padding: 10px;
+    }
+  
+    .chart-section {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .soil-moisture-container h1 {
+      font-size: 2em;
+    }
+  
+    .chart-section h2 {
+      font-size: 1.5em;
+    }
+  }
+  

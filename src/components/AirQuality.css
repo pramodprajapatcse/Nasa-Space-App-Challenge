@@ -1,0 +1,67 @@
+/* src/components/AirQuality.css */
+
+.air-quality-container {
+    background: linear-gradient(135deg, #ffffff, #e8f5e9); /* White to light green */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1400px;
+  }
+  
+  .main-title {
+    text-align: center;
+    color: #2e7d32; /* Dark Green */
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .chart-section {
+    background: linear-gradient(135deg, #ffffff, #e8f5e9); /* White to light green */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .chart-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .chart-section h2 {
+    text-align: center;
+    color: #1b5e20; /* Darker Green */
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  canvas {
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .air-quality-container {
+      padding: 20px;
+    }
+  
+    .chart-section {
+      padding: 10px;
+    }
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+  }
+  
+  .loading-message {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+  }
+  

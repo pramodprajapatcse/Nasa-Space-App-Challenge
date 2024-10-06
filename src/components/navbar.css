@@ -1,0 +1,56 @@
+/* navbar.css */
+
+/* Styles for the navbar */
+.navbar {
+    background-color: rgb(135, 225, 87) ; /* White background for better visibility */
+    padding: 10px 20px; /* Padding for the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the navbar */
+}
+
+/* Logo styling */
+.navbar-brand {
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font for the logo */
+    color: #4CAF50; /* Green color for the logo */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1); /* Scale logo on hover */
+}
+
+/* Aligns all nav items to the right */
+.navbar-nav {
+    margin-left: auto; /* Pushes nav items to the right */
+}
+
+/* Styling for navbar links */
+.navbar-nav .nav-item .nav-link {
+    color: #343a40; /* Dark text color for links */
+    font-size: 16px; /* Font size for links */
+    padding: 10px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: all 0.3s; /* Smooth transition for effects */
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(76, 175, 80, 0.1); /* Light green background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    color: #4CAF50; /* Change text color to green on hover */
+}
+
+/* Additional styling for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 20px; /* Smaller logo font size for mobile */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Smaller link font size for mobile */
+    }
+}

@@ -1,0 +1,127 @@
+/* src/pages/Register.css */
+
+/* Body and page background */
+.register-container {
+    /* White and green shaded background using linear gradient */
+    background: linear-gradient(
+        135deg, /* Angle for the gradient */
+        rgba(255, 255, 255, 0.8) 0%, /* Light white */
+        rgba(255, 255, 255, 0.5) 50%, /* Mid white */
+        rgba(40, 167, 69, 0.5) 100% /* Semi-transparent green */
+    );
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    position: relative; /* For positioning decorative elements */
+}
+
+/* Overlay to add subtle texture depth */
+.register-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 167, 69, 0.1); /* Light green overlay for texture */
+    z-index: 0;
+}
+
+/* Container styling */
+.register-container .container {
+    position: relative;
+    z-index: 1; /* Place above the overlay */
+    max-width: 400px; /* Set a maximum width for the container */
+    margin: auto; /* Center the container */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95); /* White background with slight transparency */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    backdrop-filter: blur(2px); /* Slight blur for texture effect */
+}
+
+/* Header styling */
+.register-container h2 {
+    text-align: center; /* Center the heading */
+    color: #28a745; /* Green color representing farming */
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Elegant font for headings */
+    font-size: 28px;
+}
+
+/* Form labels */
+.register-container .form-label {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #006400; /* Dark green for labels */
+}
+
+/* Input fields styling */
+.register-container .form-control {
+    border-radius: 8px; /* Rounded edges for input fields */
+    border: 2px solid #28a745; /* Green border */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Light inset shadow */
+    padding: 10px 15px; /* Increased padding for better usability */
+    font-size: 16px; /* Larger font for readability */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    background-color: #f8f9fa; /* Light background for inputs */
+}
+
+/* Input focus effect */
+.register-container .form-control:focus {
+    border-color: #228b22; /* Forest green on focus */
+    box-shadow: 0 0 8px rgba(34, 139, 34, 0.3); /* Green shadow on focus */
+    outline: none; /* Remove default outline */
+    background-color: #ffffff; /* White background on focus */
+}
+
+/* Button styling */
+.register-container .btn {
+    background-color: #28a745; /* Green button background */
+    border: none; /* Remove default border */
+    color: white; /* White text */
+    padding: 12px 25px; /* Increased padding for buttons */
+    border-radius: 10px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    font-size: 16px; /* Larger font for buttons */
+    width: 100%; /* Full width buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+/* Button hover effect */
+.register-container .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Alert message styling */
+.register-container .alert {
+    margin-bottom: 20px; /* Space below alert messages */
+    padding: 15px; /* Padding for alert */
+    border-radius: 10px; /* Rounded edges for alert */
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    border: 1px solid #dc3545; /* Red border */
+    color: #dc3545; /* Red text */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 576px) {
+    .register-container .container {
+        padding: 20px;
+    }
+
+    .register-container h2 {
+        font-size: 24px;
+    }
+
+    .register-container .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
